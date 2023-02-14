@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidestyle.css">
+</head>
+
+<body>
+    <div class="header">
+        <a class="logo"><b>EXAM PORTAL</b></a>
+        <div class="header-left">
+            <a class="text"><b>DASHBOARD</b></a>
+        </div>
+       
+        <div class="header-right">
+            
+            <a class="active" href='com.myproject.onlineexam.controller.LogoutAdmin'><b>Logout</b></a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a class="active" href="#profile"><b>Profile</b></a>
+        <a class="active" href='addstudentform.html'><b>Add Student</b></a>
+        <a class="active" href='StudentList.jsp'><b>Update Student</b></a>
+        <a class="active" href='AddPaper.jsp'><b>Add Subject</b></a>
+        <a class="active" href='ViewPapers.jsp'><b>Update Subject</b></a>
+        <a class="active" href='AddInstruction.jsp'><b>Add Instruction</b></a>
+        <a class="active" href='InstructionList.jsp'><b>Update Instruction</b></a>
+    </div>
+
+    <div class="container">
+        <div class="center">
+            <p>
+            <h1>WELCOME ADMIN</h1>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

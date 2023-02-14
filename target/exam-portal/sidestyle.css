@@ -1,0 +1,120 @@
+     body {
+      margin: 0;
+      font-family: "Times new roman", Times, serif;
+    }
+    
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: #4b4276;
+      position: absolute;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: #bdb8d7;
+      padding: 15px;
+      border-bottom: 3px solid rgba(0,0,0,0.05);
+      border-top: 3px solid rgba(225,225,225,0.05) ;
+      text-decoration: none;
+    }
+    
+     
+    .sidebar a.active {
+      color: #bdb8d7;
+    }
+    
+    .sidebar a:hover {
+      background-color: #594f8d;
+    }
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    .header {
+        height: 100%;
+        background: #bdb8d7;
+        width: 100%;
+        z-index: 12;
+        position: fixed;
+      }
+      
+      /* Style the header links */
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+        font-family: "Lucida Console",  monospace;
+      }
+      
+      /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+        position: relative;
+        top: 10%;
+      }
+      
+      /* Change the background color on mouse-over */
+      .header a:hover {
+        background-color: rgba(221, 221, 221, 0);
+        color: rgb(0, 0, 0);
+      }
+      
+      /* Style the active/current link*/
+      .header a.active {
+        color: blue;
+      }
+      .header-left {
+        position: relative;
+        top:10%;
+        left: 35%;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+      }
+      
+      /* Float the link section to the right */
+      .header-right {
+        float: right;
+        position: relative;
+        top: 10%;
+      }
+      
+      /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .header-right {
+          float: none;
+        }
+      }
+      .container { 
+        height: 20px;
+        position: relative;
+        right: 80%;
+        top:10%;
+         
+      }
+      
+      .center {
+        margin: 0;
+        position: relative;
+        top: 200%;
+        left:40%;
+        width: 220px;
+       
+      }
+     

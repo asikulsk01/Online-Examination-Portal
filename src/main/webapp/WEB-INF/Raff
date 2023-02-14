@@ -1,0 +1,16 @@
+<input type="radio" value="<%=e.getGender()%>" name="gender" value="Male"> <label for="Male">Male</label> <input type="radio" value="<%=e.getGender()%>" name="gender" value="Female"> <label for="Female">Female</label> <input type="radio" value="<%=e.getGender()%>" name="gender" value="Other"> <label for="Other">Other</label>
+
+<input type="radio" value="<%=e.getGender()%>" name="gender" value="Male"> <label for="Male">Male</label> <input type="radio" name="gender" value="Female"> <label for="Female">Female</label> <input type="radio" name="gender" value="Other"> <label for="Other">Other</label>
+
+
+<c:if test="${gender=='Male'}">checked</c:if>
+<c:if test="${gender=='Female'}">checked</c:if>
+<c:if test="${gender=='Other'}">checked</c:if
+
+
+
+
+"adminId"
+
+response.sendRedirect("StudentProfile.jsp?sid="+studentId);
+

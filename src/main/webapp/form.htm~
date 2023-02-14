@@ -1,0 +1,202 @@
+ 
+<html>
+<body style="background-color:powderblue;">
+<head>
+	<title>Student Registration</title>
+</head>
+<body>
+<script>
+
+	function validate(){
+
+		var first_name = document.user_info.name;
+		var last_name = document.user_info.name;
+		var address = document.user_info.address;
+		var city = document.user_info.city;
+		var zip_code = document.user_info.zip_code;
+		var counter = document.user_info.country;
+		var Age = document.user_info.age;
+		var Batch = document.user_info.batch;
+		var Contact No = document.user_info.contact.no;
+		
+
+		if(first_name.value.length <= 0){
+			alert("First Name is required");
+			name.focus();
+			return false;
+		}
+		if(last_name.value.length <= 0){
+			alert("Last Name is required");
+			name.focus();
+			return false;
+		}
+		if(contact_no.value.length <= 0){
+			alert("contact no is required");
+			name.focus();
+			return false;
+		}
+		if (zip_code.value.length <= 0) {
+			alert("Zip Code is required");
+			zip_code.focus();
+			return false;
+		}
+
+		if (Country.value == "PleaseSelect") {
+			alert("Country is required");
+			country.focus();
+			return false;
+		}
+		if(Batch.value.length <= 0){
+			alert("Batch is required");
+			name.focus();
+			return false;
+		}
+
+		if (email.value.length <= 0) {
+			alert("email is required");
+			email.focus();
+			return false;
+		}
+		if (Age.value.length <= 0) {
+			alert("Age is required");
+			age.focus();
+			return false;
+		}
+	}
+
+</script>
+<Br>
+					<center><h1>New Student Registration</h1><center>
+	<center><h4>Please Complete all the fields below:</h4><center>
+	<form method="get" name="user_info" onsubmit="return validate()">
+		<center>
+		<table>
+			<tr>
+				<td>
+					<b>First Name <font color="red">*</font><b> :								
+				</td>
+				<td>
+					<input type="text" name="first_name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Last Name <font color="red">*</font> :								
+				</td>
+				<td>
+					<input type="text" name="last_name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Email <font color="red">*</font> :							
+				</td>
+				<td>
+					<input type="text" name="email">
+				</td>	
+			</tr>
+			<tr>
+				<td>
+					<b>Contact Number <font color="red">*</font> :							
+				</td>
+				<td>
+					<input type="text" name="contact_no">
+				</td>	
+			</tr>
+			<tr>
+				<td>
+					<b>City : 							
+				</td>
+				<td>
+					<input type="text" name="city">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Address : 							
+				</td>
+				<td>
+					<input type="text" name="address">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<b>Postal Code <font color="red">*</font> : 						
+				</td>
+				<td>
+					<input type="" name="zip_code">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Country <font color="red">*</font> :							
+				</td>
+				<td>
+					<input type="" name="province">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Batch <font color="red">*</font> :							
+				</td>
+				<td>
+					<input type="batch" name="batch">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Age <font color="red">*</font> :							
+				</td>
+				<td>
+					<input type="" name="Age" size="2" maxlength="2" min="18">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Password <font color="red">*</font> :
+				</td>
+				<td>
+					<input type="password" name="password">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Confirm <font color="red">*</font> :
+				</td>
+				<td>
+					<input type="password" name="confirm_password">
+				</td>				
+
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="Register" class="btn btn-outline-primary">   <input type="button" onclick="location.href='AdminPanel.jsp'" value="Home" class="btn btn-outline-success">    <input type="button" onclick="location.href='StudentList.jsp'" value="Back" class="btn btn-outline-danger">
+				</td>							
+			</tr>
+											
+		</table>
+		<center>
+	</form>
+
+		</pre>
+		</form>
+		<div>
+			<font color="red" >
+				<%
+				if(request.getParameter("msg2") != null)
+				out.print(request.getParameter("msg2"));
+				%>
+			</font>
+			<font color="green" >
+				<%
+				if(request.getParameter("msg1") != null)
+				out.print(request.getParameter("msg1"));
+				%>
+			</font>
+		</div>
+</body>
+</html>
+
