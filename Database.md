@@ -1,0 +1,56 @@
+### Database credentials
+   username = eadmin , password= 1234;
+ --------------------------------------------------------------------------
+
+### Tables
+#admintable
+```
+create table admintable(adminId varchar2(20),password varchar2(20),adminName varchar2(30),adminEmail varchar2(30),adminContactNo varchar2(20),adminAddress varchar2(20),adminDob varchar2(20),adminGender varchar2(10));
+ALTER TABLE admintable ADD PRIMARY KEY (ADMINID);
+insert into admintable values('admin','admin','Asikul Seikh','asikulsk.01@gmail.com','9614450281','Berhampore','07/11/1999','Male');
+```
+
+
+#studenttable
+```
+create table studenttable(StudentId varchar2(20),password varchar2(20),name varchar2(30),batch varchar2(20),course varchar2(20),registrationNo varchar2(15),department varchar2(30),dob varchar2(20),gender varchar2(10),email varchar2(30),contactNo varchar2(15), address varchar2(30), admissionYear varchar2(10),passOutYear varchar2(10));
+ALTER TABLE studenttable ADD PRIMARY KEY (StudentId);
+```
+
+#Creation of Question table
+---------------------------------
+```
+CREATE TABLE  "QUESTIONTABLE"
+   (	
+	"QUESTIONID" VARCHAR2(10) NOT NULL ENABLE PRIMARY KEY,
+	"SUBJECTCODE" VARCHAR2(20) NOT NULL ENABLE,
+	"QUESTION" VARCHAR2(500) NOT NULL ENABLE,
+	"A" VARCHAR2(200) NOT NULL ENABLE, 
+	"B" VARCHAR2(200) NOT NULL ENABLE, 
+	"C" VARCHAR2(200) NOT NULL ENABLE, 
+	"D" VARCHAR2(200) NOT NULL ENABLE, 
+	"ANSWER" VARCHAR2(20) NOT NULL ENABLE
+	
+   );
+```
+
+#Creation of Subject table
+---------------------------------
+```
+CREATE TABLE  "SUBJECTTABLE"
+(	"SUBJECTID" VARCHAR(10) NOT NULL ENABLE, 
+	"SUBJECTCODE" VARCHAR2(30) NOT NULL ENABLE, 
+	"SUBJECTNAME" VARCHAR2(30) NOT NULL ENABLE, 
+	 PRIMARY KEY ("SUBJECTID") ENABLE
+);
+```
+
+
+--------------------------------------------------------------------------------
+//instructiontable
+```
+create table instructiontable (instructionid varchar2(20) primary key,subjectcode varchar2(20),instruction varchar2(500),totalmarks varchar2(3),duration varchar2(15),examdate varchar(15));
+```
+
+
+
