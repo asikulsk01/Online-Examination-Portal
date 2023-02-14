@@ -1,8 +1,8 @@
-### Database credentials
+###Database credentials
    username = eadmin , password= 1234;
  --------------------------------------------------------------------------
 
-### Tables
+###Tables
 #admintable
 ```
 create table admintable(adminId varchar2(20),password varchar2(20),adminName varchar2(30),adminEmail varchar2(30),adminContactNo varchar2(20),adminAddress varchar2(20),adminDob varchar2(20),adminGender varchar2(10));
